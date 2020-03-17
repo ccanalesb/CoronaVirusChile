@@ -1,0 +1,1 @@
+export const baseApi = 'https://covid19.mathdro.id/api/countries/CL';

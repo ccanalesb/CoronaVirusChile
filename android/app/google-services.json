@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1068493855759",
+    "firebase_url": "https://coronaviruschile-b17eb.firebaseio.com",
+    "project_id": "coronaviruschile-b17eb",
+    "storage_bucket": "coronaviruschile-b17eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068493855759:android:b66cb6f68a1fc6e664d77a",
+        "android_client_info": {
+          "package_name": "com.ccanales.coronaviruschile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068493855759-nq0brltqgme356u2h6bg1s6mm94ntmcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJMGg47zxNjl1XhNPWUlxvtocfiUOYqVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068493855759-nq0brltqgme356u2h6bg1s6mm94ntmcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

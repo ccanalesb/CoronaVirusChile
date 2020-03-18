@@ -16,7 +16,7 @@ const BaseStats = ({
     <Card>
       <Card.Cover source={image} />
       <Card.Content>
-        <Headline>Estado Corona Virus en Chile</Headline>
+        <Headline style={styles.headline}>Estado Corona Virus en Chile</Headline>
         <View style={styles.avatarContainer}>
           <Avatar text={confirmedAmount} subtitle="Confirmados" />
         </View>
@@ -45,6 +45,7 @@ const BaseStats = ({
 export default BaseStats;
 
 const styles = StyleSheet.create({
+  headline: { alignSelf: 'center', paddingBottom: 20, fontWeight: 'bold' },
   dataContainer: {
     paddingTop: 50,
     flexDirection: 'row',

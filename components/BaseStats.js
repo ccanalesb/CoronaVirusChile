@@ -1,6 +1,8 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Card, Headline, List } from 'react-native-paper';
+import Avatar from './Avatar';
+import InfoText from './InfoText';
 
 const image = require('../assets/header.jpg')
 
@@ -15,21 +17,25 @@ const BaseStats = ({
       <Card.Cover source={image} />
       <Card.Content>
         <Headline>Estado Corona Virus en Chile</Headline>
+        <View style={styles.avatarContainer}>
+          <Avatar text={confirmedAmount} subtitle="Confirmados" />
+        </View>
+        <View style={styles.dataContainer}>
+          <InfoText
+            title={recoveredAmount}
+            subtitle="Recuperados"
+          />
+          <InfoText
+            title={deathAmount}
+            subtitle="Fallecidos"
+          />
+        </View>
         <List.Item
-          title={confirmedAmount}
-          description="Confirmados"
-        />
-        <List.Item
-          title={recoveredAmount}
-          description="Recuperados"
-        />
-        <List.Item
-          title={deathAmount}
-          description="Muertes"
-        />
-        <List.Item
-          title={lastUpdate}
-          description="Ultima Actualización"
+          style={styles.dateStyle}
+          right={() => <InfoText
+            title={lastUpdate}
+            subtitle="Ultima Actualización"
+          />}
         />
       </Card.Content>
     </Card>
@@ -38,4 +44,17 @@ const BaseStats = ({
 
 export default BaseStats;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  dataContainer: {
+    paddingTop: 50,
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  },
+  avatarContainer: {
+    alignSelf: 'center',
+  },
+  dateStyle: {
+    paddingTop: 40,
+    justifyContent: 'flex-end'
+  }
+})
